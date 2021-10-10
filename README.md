@@ -11,6 +11,7 @@
 #define pb push_back
 #define all(x) x.begin(),x.end()
 #define sz(x) ((int)x.size())
+#define ini(x, y) memset(x, y, sizeof(x));
 using namespace std;
 using vi = vector<int>;
 using ll = long long;
