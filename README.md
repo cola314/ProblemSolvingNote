@@ -34,3 +34,16 @@ vector<string> split(string s, char seperator) {
 	return ret;
 }
 ```
+## 에라토스테네스의 체
+```c++
+const int MAX = 1'000'000 + 10;
+int prime[MAX];
+
+FOR(i, MAX) prime[i] = 1;
+prime[1] = 0;
+for (ll i = 2; i < MAX; i++) if (prime[i]) {
+	for (ll j = i * i; j < MAX; j += i) {
+		prime[j] = 0;
+	}
+}
+```
