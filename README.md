@@ -29,6 +29,12 @@ using ii = pair<int, int>;
 using iii = pair<pair<int, int>, int>;
 using vii = vector<ii>;
 ```
+## EOF까지 입력
+```c++
+while (!cin.eof()) {
+	cin >> s;
+}
+```
 
 ## 소수점 출력
 ```c++
